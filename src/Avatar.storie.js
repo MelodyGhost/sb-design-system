@@ -13,6 +13,9 @@ export default {
       options: ['large', 'medium', 'small', 'tiny'],
     },
   },
+  parameters: {
+    componentSubtitle: 'My test component subtitle',
+  },
 };
 
 export const Standard = (args) => <Avatar {...args} />;
@@ -33,6 +36,12 @@ export const Sizes = (args) => (
 Sizes.args = {
   username: 'Tom Coleman',
   src: 'https://avatars2.githubusercontent.com/u/132554',
+};
+
+Sizes.parameters = {
+  docs: {
+    storyDescription: 'Avatar with different sizes',
+  },
 };
 
 export const Initials = (args) => (
